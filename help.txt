@@ -1,0 +1,60 @@
+App.java directory 
+-> javac App.java (-encoding utf8)
+-> java App
+
+Run menu
+-> add conf.
+-> "args": ["todo.txt","asd.txt"]
+-> args[0],args[1]
+
+------------------------------------------------------------
+
+.jar futtatas
+"C:\Program Files\Java\jdk-20\bin\java" -jar filename.jar
+
+futtathato file keszites
+.bat / .cmd
+@echo off
+"C:\Program Files\Java\jdk-20\bin\java" -jar argu.jar %1
+
+------------------------------------------------------------
+Projekt munka szerkezet:
+
+api
+-.gitkeep
+desktop
+draft
+-ui
+-
+docs - api,desktop,mobil,web
+-user_doc
+-dev_doc
+mobil
+web
+
+------------------------------------------------------------
+
+adatbazis
+collate - rendezes nyelve
+
+------------------------------------------------------------
+
+mariadb maven connection: 
+<dependencies>
+	<dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+</dependencies>>
+
+create database test01;
+grant all privileges
+on test01.*
+to test01@localhost
+identified by 'titok';
+
+projekt
+	database
+		create.sql
+		insert.sql
