@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+    
 public class Gyepes {
     static Scanner sc = new Scanner(System.in);
     public static void solution()
