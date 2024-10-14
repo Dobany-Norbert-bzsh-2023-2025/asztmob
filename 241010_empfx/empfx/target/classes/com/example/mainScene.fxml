@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -8,17 +7,13 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
    <children>
-      <Button layoutX="132.0" layoutY="272.0" mnemonicParsing="false" onAction="#OnClickAddButton" text="Add" />
-      <TextField fx:id="salaryField" layoutX="126.0" layoutY="209.0" />
-      <TextField fx:id="cityField" layoutX="126.0" layoutY="173.0" />
-      <TextField fx:id="nameField" layoutX="126.0" layoutY="131.0" />
-      <Text layoutX="126.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new employees">
+      <Button layoutX="237.0" layoutY="185.0" mnemonicParsing="false" onAction="#onClickManageButton" text="Manage Employees" />
+      <Button layoutX="275.0" layoutY="232.0" mnemonicParsing="false" onAction="#onClickExitButton" text="Exit" />
+      <Text layoutX="197.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Database">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Text layoutX="65.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
-      <Text layoutX="67.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" />
-      <Text layoutX="64.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" />
+      <Button layoutX="242.0" layoutY="135.0" mnemonicParsing="false" onAction="#onClickListButton" text="List of Employees" />
    </children>
 </Pane>

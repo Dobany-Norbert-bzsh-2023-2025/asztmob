@@ -1,4 +1,4 @@
-package com.example;
+package lan.zold;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -22,20 +22,7 @@ public class App extends Application {
         stage.show();
     }
 
-
-    static void setRoot(String fxml){
-        try
-        {
-            trySetRoot(fxml);
-        }
-        catch(IOException e)
-        {
-            System.err.println("Couldn't set root.");
-            System.err.println(e.getMessage());
-        }
-    }
-
-    static void trySetRoot(String fxml) throws IOException {
+    static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 

@@ -26,7 +26,7 @@ public class EmployeeSource{
     }
     private ArrayList<Employee> tryGetEmployees() throws SQLException{
         Connection conn = database.connect();
-        String sql = "SELECT * FROM EMPLOYEE";
+        String sql = "SELECT * FROM EMPLOYEES";
         Statement st = conn.createStatement();
         ResultSet rs = st.executeQuery(sql);
         ArrayList<Employee> empList = new ArrayList<Employee>();
@@ -57,7 +57,7 @@ public class EmployeeSource{
     public void tryAddEmployee(Employee emp) throws SQLException{
         Connection conn = database.connect();
         String sql = """
-                insert into emplyees
+                insert into employees
                 (name, city, salary)
                 values
                 (?, ?, ?)
