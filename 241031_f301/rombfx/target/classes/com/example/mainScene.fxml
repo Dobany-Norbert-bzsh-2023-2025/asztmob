@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <children>
+      <Button layoutX="225.0" layoutY="229.0" mnemonicParsing="false" onAction="#onClickCalcButton" text="Calc Button" />
+      <Label alignment="CENTER" layoutX="272.0" layoutY="106.0" text="Title Label" />
+      <Label layoutX="147.0" layoutY="150.0" text="Side Label" />
+      <Label layoutX="143.0" layoutY="183.0" text="Alpha Label" />
+      <TextField fx:id="sideField" layoutX="225.0" layoutY="146.0" />
+      <TextField fx:id="alphaField" layoutX="225.0" layoutY="179.0" />
+      <TextField fx:id="areaField" layoutX="226.0" layoutY="287.0" />
+      <Label layoutX="146.0" layoutY="291.0" text="Area Label" />
+      <Button layoutX="316.0" layoutY="229.0" mnemonicParsing="false" onAction="#onClickAboutButton" text="About Button" />
+   </children>
+</Pane>

@@ -1,0 +1,6 @@
+java version -> 20 -> pom.xml
+module.info.java -> requires transitive javafx.graphics;
+primary,secondary -> delete
+mainScene.fxml -> 
+    resources\com\example
+    App.java -> mainScene instead of primary
