@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <children>
+      <Button layoutX="252.0" layoutY="262.0" mnemonicParsing="false" onAction="#onClickCalcButton" text="Calculate" />
+      <Label alignment="CENTER" layoutX="198.0" layoutY="67.0" text="Trapéz Terület Számító">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="188.0" layoutY="116.0" text="Side A :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="188.0" layoutY="149.0" text="Side B :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="sideFieldA" layoutX="252.0" layoutY="115.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="sideFieldB" layoutX="252.0" layoutY="148.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="areaField" editable="false" layoutX="252.0" layoutY="307.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Label layoutX="193.0" layoutY="308.0" text="Area :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button layoutX="333.0" layoutY="262.0" mnemonicParsing="false" onAction="#onClickAboutButton" text="About" />
+      <Label layoutX="187.0" layoutY="182.0" text="Side C :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sideFieldC" layoutX="252.0" layoutY="181.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="187.0" layoutY="215.0" text="Side D :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sideFieldD" layoutX="252.0" layoutY="214.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="20.0" layoutY="21.0" mnemonicParsing="false" onAction="#onClickExitButton" text="Exit" />
+   </children>
+</Pane>

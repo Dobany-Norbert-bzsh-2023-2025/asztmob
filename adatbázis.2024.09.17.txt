@@ -1,0 +1,24 @@
+Adatbázis kezelés. 2024.09.17---
+
+CREATE PROCEDURE lottostatisztika(IN mennyi INT)
+BEGIN
+		# Deklarációk
+        -- 1. változók
+		DECLARE i INT DEFAULT 1;
+        DECLARE lsz INT;
+        -- 2. a lekérdezésekhez tartozó deklarációkat tartalmazza
+        -- 3. kivételkezeléshez tartozó deklarációkat tartalmazza
+        # DECLARE CONTINUE HANDLER FOR 1062 SET i=i-1;
+        DECLARE CONTINUE HANDLER FOR 1062 SELECT "ugyanez: ",lsz;
+        CREATE TABLE tippek(szam INT PRIMARY KEY);
+        # WHILE i<=5 DO
+        WHILE (SELECT COUNT(*) FROM tippek)<5 DO
+        	SET lsz=FLOOR(RAND()*90+1);
+            INSERT INTO tippek VALUES(lsz);
+            #SET i=i+1;
+        END WHILE;
+        SELECT * FROM tippek;
+        DROP TABLEtippek;
+END//
+DELIMITER;
+

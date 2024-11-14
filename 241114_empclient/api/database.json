@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Strong Steven",
+      "city": "Szeged",
+      "salary": 395
+    },
+    {
+      "id": 2,
+      "name": "asd",
+      "city": "asd",
+      "salary": 2323
+    },
+    {
+      "id": 3,
+      "name": "asd",
+      "city": "ad",
+      "salary": 34
+    },
+    {
+      "name": "asd",
+      "city": "asd",
+      "salary": 2,
+      "id": 4
+    }
+  ]
+}

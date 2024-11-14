@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <children>
+      <Button fx:id="updateButton" layoutX="269.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClickUpdateButton" text="update" />
+      <TableView fx:id="empTable" layoutX="57.0" layoutY="14.0" onMouseClicked="#onClickTable" prefHeight="292.0" prefWidth="483.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="147.0" text="Név" />
+            <TableColumn fx:id="cityCol" prefWidth="147.0" text="Település" />
+            <TableColumn fx:id="salaryCol" prefWidth="102.0" text="Fizetés" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idField" disable="true" editable="false" layoutX="47.0" layoutY="318.0" />
+      <TextField fx:id="nameField" layoutX="208.0" layoutY="318.0" />
+      <TextField fx:id="cityField" layoutX="372.0" layoutY="318.0" />
+      <TextField fx:id="salaryField" layoutX="532.0" layoutY="318.0" />
+      <Button fx:id="deleteButton" layoutX="208.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClickDeleteButton" text="delete" />
+      <Button fx:id="addButton" layoutX="144.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClickAddButton" text="add" />
+   </children>
+</Pane>

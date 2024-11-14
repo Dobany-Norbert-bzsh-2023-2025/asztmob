@@ -1,0 +1,34 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Strong Steven",
+      "city": "Szeged",
+      "salary": 395
+    },
+    {
+      "name": "Esze Lajos",
+      "city": "Pécs",
+      "salary": 387,
+      "id": 2
+    },
+    {
+      "name": "Pót Elemér",
+      "city": "Szeged",
+      "salary": 389,
+      "id": 3
+    },
+    {
+      "name": "Esze Lajos",
+      "city": "Pécs",
+      "salary": 387,
+      "id": 4
+    },
+    {
+      "name": "Táncos Tibor",
+      "city": "Pécs",
+      "salary": 389,
+      "id": 5
+    }
+  ]
+}
