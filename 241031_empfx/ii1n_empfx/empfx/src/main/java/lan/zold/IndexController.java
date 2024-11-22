@@ -107,7 +107,7 @@ public class IndexController {
         System.out.println("delete");
         Employee emp = empTable.getSelectionModel().getSelectedItem();
         employeeSource.deleteEmployee(emp.getId());
-        System.out.println(emp.getId());
+        setEmpTable();
     }
 
 }

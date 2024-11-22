@@ -32,11 +32,19 @@ public class CreateController {
         emp.setSalary(salary);
         employeeSource = new EmployeeSource(new Sqlite());
         employeeSource.addEmployee(emp);
+        setEmptyField();
     }
 
     @FXML
     void onClickBackButton(ActionEvent event) {
         App.setRoot("mainScene");
-    }    
+    }
+    
+    private void setEmptyField()
+    {
+        nameField.setText("");
+        cityField.setText("");
+        salaryField.setText("");
+    }
 
 }
