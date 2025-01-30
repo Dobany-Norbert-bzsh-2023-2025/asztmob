@@ -1,0 +1,3 @@
+primary, secondary delete
+module-info.java - requires transitive javafx.graphics;
+app.java scene rename
